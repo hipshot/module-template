@@ -1,0 +1,38 @@
+{
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"],
+              "node": "current"
+            },
+            "modules": false
+          }
+        ],
+        "babili"
+      ],
+      "ignore": ["**/*.test.js", "**/tests/*"]
+    },
+    "test": {
+      "presets": ["env"]
+    },
+    "cjs": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"],
+              "node": "current"
+            }
+          }
+        ],
+        "babili"
+      ],
+      "ignore": ["**/*.test.js", "**/tests/*"]
+    }
+  }
+}
